@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <Title>ACM Project - Week 8</Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="">
+       <div class="container.fluid">
+        City Name:
+        <input type="text" id = "name" name ="name">
+        Zip code:
+        <input type="text" id="zipcode" name ="zipcode" size="5">
+       
+        
+        </div>
+        <button type="submit" value="Submit" id="submit" onclick="myFunction()">Submit</button>
+
+        
+        <script language="javascript">
+            function myFunction(){
+                var x,y;
+                x = document.getElementById("name").value;
+                y = document.getElementById("zipcode").value;
+                
+                if(x =="" && y=="")
+                   window.alert("please enter either Zip code or city: ")
+                    else if(x!=""&& y!=""){
+                            document.getElementById("Error").innerHTML="Only enter a City name or Zip code not both";
+                            //document.getElementById("zipCodeOutput").innerHTML="Zip Code" + y;
+                       
+                    }
+                else if(x != ""){
+                            document.getElementById("zipCodeOutput").innerHTML="City: " + x;
+                            document.getElementById("Error").innerHTML="";
+                        }else{
+                            document.getElementById("zipCodeOutput").innerHTML="Zip Code: " + y;
+                            document.getElementById("Error").innerHTML="";
+                        }
+            }
+        </script>
+        
+        <p id="Error"></p>
+        <p id="zipCodeOutput"></p>
+    </div>
+    </body>
+    </html>
+
+
+
+
