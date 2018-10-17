@@ -3,10 +3,13 @@
     <head>
         <Title>ACM Project - Week 8</Title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+   body { background: navy !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
     </head>
     <body>
-        <div class="">
-       <div class="container.fluid">
+    
+       <div class="container.fluid p-3 mb-2 bg-info text-white">
         City Name:
         <input type="text" id = "name" name ="name">
         Zip code:
@@ -40,9 +43,9 @@
             }
         </script>
         
-        <p id="Error"></p>
-        <p id="zipCodeOutput"></p>
-    </div>
+        <p class="text-primary" id="Error"></p>
+        <p class="text-primary" id="zipCodeOutput"></p>
+
     </body>
     </html>
 
