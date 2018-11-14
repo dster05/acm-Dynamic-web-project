@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+h1{
+    color:aliceblue;
+}
+.row{
+    overflow: hidden; 
+    border-color: aliceblue;
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+p{
+	color:aliceblue;
+}
+
+img{
+	max-width: 100%;
+}
+.labels{
+	color:aliceblue;
+}
+
+.weatherResponse{
+    color: aliceblue;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
